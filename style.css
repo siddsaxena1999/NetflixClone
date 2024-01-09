@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  height: 100vh;
+  background-image: url(./assets/images/bg-img.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 75vw;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  position: relative;
+  z-index: 10;
+  height: 43px;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  position: relative;
+  color: white;
+  max-width: 78vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100% - 100px);
+  text-align: center;
+  gap: 20px;
+}
+
+.hero>:nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.line {
+  height: 9px;
+  background-color: grey;
+  opacity: 0.4;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  padding: 5px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.445);
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 7px 28px;
+  font-size: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main input {
+  padding: 12px 169px 12px 9px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: black;
+  opacity: 0.7;
+  font-weight: 400;
+  border: 1px solid white;
+  color: white;
+}
+
+.faq input {
+  padding: 12px 169px 12px 9px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #0F0F0F;
+  opacity: 0.7;
+  font-weight: 400;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.first {
+  max-width: 75vw;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 430px;
+  position: relative;
+  z-index: 10;
+}
+
+.image video {
+  position: absolute;
+  height: 240px;
+  width: 430px;
+  top: 50px;
+  right: 0px;
+}
+
+.first div {
+  display: flex;
+  flex-direction: column;
+}
+
+.first div span:nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first div span:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 34px;
+}
+
+.faq h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2D2D2D;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 75vw;
+  margin: 10px auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+}
+
+.email {
+  margin: 50px;
+}
+
+.email .hero-buttons {
+  margin-top: 20px;
+}
+
+footer {
+  max-width: 75vw;
+  margin: auto;
+  color: #B3B3B3;
+}
+
+footer .questions {
+  padding: 32px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1130px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-item a {
+  font-size: 14px;
+  color: #B3B3B3;
+}
+
+.trademark {
+  font-size: 14px;
+  margin: 35px 0;
+}
+
+
+@media screen and (max-width: 1130px) {
+  .first {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .image img {
+    width: 300px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .image video {
+    position: absolute;
+    height: 125px;
+    width: 300px;
+    top: 50px;
+    right: 0px;
+  }
+
+  nav img {
+    height: 24px;
+  }
+
+  .hero>:nth-child(1) {
+    font-size: 38px;
+  }
+
+  .hero> :nth-child(2) {
+    font-size: 14px;
+  }
+
+  .hero> :nth-child(3) {
+    font-size: 12px;
+  }
+
+  .main input {
+    padding: 12px 117px 12px 9px;
+  }
+
+  .btn-red {
+    padding: 7px 17px;
+    font-size: 18px;
+  }
+
+  .first div span:nth-child(1) {
+    font-size: 33px;
+  }
+
+  .first div span:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .faq h2 {
+    font-size: 33px;
+  }
+
+  .faqbox {
+    font-size: 20px;
+  }
+
+  footer{
+    font-size: 14px;
+  }
+}
