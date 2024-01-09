@@ -309,12 +309,12 @@ footer .questions {
   }
 
   .main input {
-    padding: 12px 117px 12px 9px;
+    padding: 12px 73px 12px 9px;
   }
 
   .btn-red {
-    padding: 7px 17px;
-    font-size: 18px;
+    padding: 7px 15px;
+    font-size: 14px;
   }
 
   .first div span:nth-child(1) {
@@ -333,7 +333,7 @@ footer .questions {
     font-size: 20px;
   }
 
-  footer{
+  footer {
     font-size: 14px;
   }
 }
