@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
 }
 
 .main {
@@ -335,5 +335,9 @@ footer .questions {
 
   footer {
     font-size: 14px;
+  }
+
+  .faq input {
+    padding: 12px 71px 12px 9px;
   }
 }
